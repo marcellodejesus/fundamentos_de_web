@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Click</title>
+</head>
+<body>
+    <button id="botao">Clique aqui!</button>
+
+    <button onclick="clique ()">Clique aqui no botao 2</button>
+
+    <script>
+        const botao = document.getElementById('botao');
+
+        botao.addEventListener('click', function () {
+            alert ('Você clicou no botão');
+        })
+
+        function clique() {
+            alert("Vc clicou no botao 2")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Burger - Hamburgueria Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Big Burger</a>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#cardapio">Cardapio</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main class="inicio" id="inicio">
+        <h1>O MELHOR HAMBURGUER DA CIDADE</h1>
+        <p>Ingredientes frescos, preparo artesanal e muito sabor em cada mordida!</p>
+        <div>
+            <a href="#cardapio" class="botao">VER CARDAPIO</a>
+            <a href="#contato" class="botao botao-amarelo">FAZER PEDIDO</a>
+        </div>
+
+    </main>
+
+    <section class="secao-cardapio" id="cardapio">
+        <h2 class="titulo-cardapio">NOSSO CARDAPIO</h2>
+
+        <div class="burguers">
+            <div class="card-burguer">
+                <img src="imagens/big-burguer-classico.avif" alt="Big Burguer Classico" class="img-burguer">
+                <h3 class="nome-hamburguer">Big Burguer Classico</h3>
+                <p class="preco-burguer">R$ 24,90</p>
+                <p class="descricao">Pão brioche, hamburguer 180g, queijo cheddar, alface, tomate e molho especial.</p>
+                <a href="#" class="botao" onclick="pedir()">PEÇA AGORA</a>
+
+            </div>
+            <div class="card-burguer">
+                <img src="imagens/cheese-bacon.avif" alt="Cheese Bacon" class="img-burguer">
+                <h3 class="nome-hamburguer">Cheese Bacon</h3>
+                <p class="preco-burguer">R$ 29,90</p>
+                <p class="descricao">Pão Australiano, hamburguer 200g, queijo prato, Bacon crocante e cebola caramelizada .</p>
+                <a href="#" class="botao" onclick="pedir()">PEÇA AGORA</a>
+
+            </div>
+            <div class="card-burguer">
+                <img src="imagens/burguer-vegetariano.avif" alt="Big Burguer Vegetariano" class="img-burguer">
+                <h3 class="nome-hamburguer">Big Burguer Vegetariano</h3>
+                <p class="preco-burguer">R$ 24,90</p>
+                <p class="descricao">Pão integral, hamburguer de grão de bico, queijo coalho, rucula, tomate seco e maionese de ervas.</p>
+                <a href="#" class="botao" onclick="pedir()">PEÇA AGORA</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="secao-sobre" id="sobre">
+        <div class="container-sobre">
+            <img src="imagens/img-sobre.png" alt="sobre a Big Burguer" class="img-sobre">
+            <div class="texto-sobre">
+                <h2>SOBRE NOS</h2>
+                <p>A Big Burguer nasceu da paixão por hambúrgueres artesanais e da vontade de oferecer uma experiência
+                    gastronômica única. Nossos ingredientes são selecionados cuidadosamente e nossos hambúrgueres são
+                    preparados na hora, garantindo frescor e sabor em cada mordida.</p>
+                <p>Nossa missão é simples: servir os melhores hambúrgueres da cidade, com atendimento diferenciado e um
+                    ambiente descontraído que faz você se sentir em casa.</p>
+                <p>Venha nos visitar e descubra por que somos a preferida dos amantes de hambúrguer!</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="secao-contato" id="contato">
+        <h2 class="titulo-contato">FALE CONOSCO</h2>
+        <div class="container-contato">
+            <div class="info-contato">
+                <h3>NOSSA LOCALIZAÇÃO</h3>
+                <p>📍 Rua dos Sabores, 123 - Centro</p>
+                <p>📞 (00) 00000-0000</p>
+                <p>✉️ contato@bigburguer.com</p>
+                <p>⏰ Aberto todos os dias das 11h às 23h</p>
+            </div>
+            <div class="form-contato">
+                <h3>ENVIE UMA MENSGEM</h3>
+                <form>
+                    <div class="grupo-form">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="grupo-form">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="botao">ENVIAR</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Big Burguer. Todos os direitos reservados</p>
+        <p>Desenvolvido por Marcello Barreto</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

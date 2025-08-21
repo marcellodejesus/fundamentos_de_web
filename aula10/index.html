@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Conteúdo - innerText</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+            border: none;
+            padding: 5px;
+            border-radius: 8px;
+            color: white;
+            background-color: cornflowerblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="meu-texto">Texto Original</p>
+    <button onclick="mudarTexto()">Mudar texto</button> 
+
+    <div id="elementos">
+        Elementos
+    </div>
+    <button onclick="addElemento()">Adicione um elemento HTML...</button>
+
+    <script>
+        function mudarTexto() {
+            document.getElementById("meu-texto").innerHTML = "<button>Voce criou um elemento butao</button>";
+        }
+
+        function addElemento () {
+            document.getElementById("elementos"). innerHTML = "<a href='#'>Vc criou um link! </a>";
+        }
+    </script>
+    
+</body>
+</html>

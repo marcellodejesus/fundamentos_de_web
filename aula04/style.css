@@ -1,0 +1,26 @@
+.externo{
+    color: blue;
+    border: 2px solid black;
+}
+div {
+    background-color: rebeccapurple;
+    color: red;
+    width: 500px;
+    padding: 10px;
+}
+
+.texto {
+    font-family: monospace;
+    font-size:  1rem;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: justify;
+}
+
+section{
+    background-color:aqua ;
+    width: 50%;
+    padding:10px ;
+    line-height: 1.5em;
+}
